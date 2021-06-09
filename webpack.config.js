@@ -6,6 +6,10 @@ module.exports = {
     filename: 'main.js',
     path: path.resolve(__dirname, 'dist'),
   },
+  watchOptions: {
+  poll: true,
+  ignored: /node_modules/
+},
   module: {
      rules: [
        {
