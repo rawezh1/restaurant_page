@@ -1,3 +1,7 @@
+body {
+    text-align: center;
+    background-color: beige;
+}
 #main {
     text-align: center;
     width: 100%;
@@ -10,6 +14,17 @@
     text-align: center;
     border-style: none;
     border-color: black;
+    background-color: rgba(0, 0, 0, 0.678);
+    width: 90%;
+    height: 90%;
+    margin: auto;
+    padding:20px;
+    border-radius: 10px;
+}
+#contactContainer {
+    
+    text-align: center;
+    border-style: none;
     background-color: rgba(0, 0, 0, 0.678);
     width: 90%;
     height: 90%;
@@ -32,6 +47,14 @@
     background-size: cover;
     border-radius:0.8cm;
     text-align: center;
+    
+}
+.contactElement{
+    color: rgb(200, 255, 0);
+    font-family: helvetica;
+}
+.item{
+    padding-bottom:2cm;
 }
 #item0{
     color:rgb(250, 142, 0);
@@ -43,6 +66,27 @@
     font-weight: bold;
     font-size: 2em;
 }
+#item2{
+    color:rgb(5, 109, 40);
+    font-weight: bold;
+    font-size: 2em;}
+#item3{
+    color:rgb(255, 0, 0);
+    font-weight: bold;
+    font-size: 2em;}
+#item0Disc{
+    color:rgb(250, 142, 0);
+}
+#item1Disc{
+    color:rgb(0, 79, 250);
+}
+#item2Disc{
+    color:rgb(5, 109, 40);
+}
+#item3Disc{
+    color:rgb(255, 0, 0);
+}
+
 h2{
     color: rgb(255, 255, 0);
     font-family: "Trebuchet MS", sans-serif;
@@ -53,5 +97,5 @@ h2{
     background-color: black;
 }
 p {
-    padding-top: 90px;
+    padding-top: 50px;
 }

@@ -1,4 +1,5 @@
 import Falafel from './falafel_image.jpg';
+import './style.css'
 const setHomepage =  function () {
  let contentDiv = document.getElementById('content');
  let headLine = document.createElement('h1');

@@ -6,9 +6,9 @@ import green from './green.jpg'
 import falafel from './falafel_image.jpg';
 const setMenu = function () {
     let mainDiv = document.createElement('div');
-    let menuCont = document.createElement('div');
     let header = document.createElement('h2');
-    header.innerHTML = 'Menu'
+    let menuCont = document.createElement('div');
+    header.textContent = 'Menu'
     mainDiv.id = 'main';
     menuCont.id = 'menuContainer';
     mainDiv.appendChild(header)
@@ -28,7 +28,6 @@ const setMenu = function () {
     }
     mainDiv.appendChild(menuCont)
     document.body.appendChild(mainDiv)
-    mainDiv.style.backgroundImage = falafel;
     let item0 = document.getElementById('item0')
     let item1 = document.getElementById('item1')
     let item2 = document.getElementById('item2')
@@ -48,9 +47,9 @@ const setMenu = function () {
     item2.textContent = 'GREEN FALAFEL  $3';
     item3.textContent = 'SPICY FALAFEL  $4';
     item0Disc.textContent = `Ingredients: Chickpeas, Garlic, Coriander Powder, Salt`;
-    item0Disc.setAttribute('style','color:rgb(250, 142, 0);')
     item1Disc.textContent = `Ingredients: Fava beans, Onion, Cumin Powder, Salt`;
-    item1Disc.setAttribute('style','color:white;')
+    item2Disc.textContent = `Ingredients: Chickpeas, Bell Peppers, Parsly, Onion, Salt`
+    item3Disc.textContent = `Ingredients: Chickpeas, Garlic, Chili Pepper, Red Pepper Powder`
 
     combine0.style.backgroundImage = `url(${classic})`;
     combine1.style.backgroundImage = `url(${fava})`;
