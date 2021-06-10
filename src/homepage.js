@@ -1,18 +1,20 @@
-import Falafel from './falafel_image.jpg';
+import falafel from './falafel_image.jpg';
 import './style.css'
 const setHomepage =  function () {
- let contentDiv = document.getElementById('content');
- let headLine = document.createElement('h1');
+ let mainDiv = document.createElement('div');
+ let header = document.createElement('h2');
+ let homeCont = document.createElement('div');
  let discr = document.createElement('p');
- let image = document.createElement('img');
- headLine.innerHTML = 'Falafel Khana';
- discr.innerHTML = 'Do you love falafel? Then you have come to the right place! As this is the house of falafel with so many varieties to choice from!'
- image.src = Falafel;
- headLine.setAttribute('style', 'background-color: rgb(197, 63, 63);')
- image.setAttribute('style','max-width: 100%; max-height: 100%;')
- contentDiv.appendChild(headLine);
- contentDiv.appendChild(discr);
- contentDiv.appendChild(image);
+ mainDiv.id = 'main';
+ homeCont.id = 'homeContainer';
+ discr.id = 'discr';
+ header.textContent = 'Falafel Khana';
+ discr.textContent = 'Do you love falafel? Then you have come to the right place! As this is the house of falafel with so many varieties to choice from!'
+ homeCont.style.backgroundImage = `url(${falafel})`;
+ homeCont.appendChild(discr);
+ mainDiv.appendChild(header);
+ mainDiv.appendChild(homeCont);
+ document.body.appendChild(mainDiv);
 }
 
 export {setHomepage}

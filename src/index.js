@@ -17,6 +17,17 @@ window.onload = function () {
     homeBtn.textContent = 'Home';
     menuBtn.textContent = 'Menu';
     contactBtn.textContent = 'Contact';
+    setHomepage();
+    homeBtn.addEventListener('click',function(){
+        document.body.removeChild(document.getElementById('main'));
+        setHomepage()});
+    menuBtn.addEventListener('click',function(){
+        document.body.removeChild(document.getElementById('main'));
+        setMenu()})
+    contactBtn.addEventListener('click',function(){
+        document.body.removeChild(document.getElementById('main'));
+        setContact()})
+   
    
 
 

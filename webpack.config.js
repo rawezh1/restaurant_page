@@ -1,6 +1,10 @@
 const path = require('path');
-
-module.exports = {
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+module.exports = {mode: 'development',plugins: [
+     new HtmlWebpackPlugin({
+      title: 'Falafel Khana',
+     }),
+   ],devtool: 'inline-source-map',
   entry: './src/index.js',
   output: {
     filename: 'main.js',
